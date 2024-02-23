@@ -20,11 +20,18 @@ function calculateWinningBalance(victories, defeats) {
   let nivel = '';
 
   if (victories <= 10) nivel = "Ferro";
+    
   else if (victories >= 11 && victories <= 20) nivel = "Bronze"
+  
   else if (victories >= 21 && victories <= 50) nivel = "Prata"
+    
+  
   else if (victories >= 51 && victories <= 80) nivel = "Ouro"
+  
   else if (victories >= 81 && victories <= 90) nivel = "Diamante"
+  
   else if (victories >= 91 && victories <= 100) nivel = "Lendário"
+  
   else if (victories >= 101) nivel ="Imortal"
 
 
@@ -35,3 +42,11 @@ function calculateWinningBalance(victories, defeats) {
 console.log(calculateWinningBalance(50, 20));
 console.log(calculateWinningBalance(70, 30));
 console.log(calculateWinningBalance(20, 20));
+
+wellDone()
+
+function wellDone(){
+ console.log("Preparando para passar de Nível. ")
+ console.log("Você conquistou o nível Diamante. ")
+ }
+
